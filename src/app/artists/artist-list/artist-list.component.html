@@ -1,0 +1,22 @@
+<md-card>
+  <md-card-header>
+    <md-card-title>
+      <h1>Artists</h1>
+    </md-card-title>
+  </md-card-header>
+  <md-card-content>
+    <md-list>
+      <md-list-item *ngFor="let artist of artists" (click)="select.emit(artist)">
+        <h3 md-line>{{artist.name}} | <span class="symbol">{{artist.description}}</span></h3>
+        <button md-icon-button *ngIf="!readOnly"
+                (click)="delete.emit(artist.id);$event.stopImmediatePropagation();">
+          <md-icon>close</md-icon>
+        </button>
+        <p md-line>
+        </p>
+      </md-list-item>
+    </md-list>
+  </md-card-content>
+</md-card>
+
+

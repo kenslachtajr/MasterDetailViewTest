@@ -1,0 +1,36 @@
+<!--<p>-->
+  <!--artist-detail works!-->
+<!--</p>-->
+
+<md-card>
+  <md-card-header>
+    <md-card-title>
+      <h1>
+        <span *ngIf="currentArtist.id; else prompt">Editing {{originalName}}</span>
+        <ng-template #prompt>Create</ng-template>
+      </h1>
+    </md-card-title>
+  </md-card-header>
+  <form (submit)="saveArtist($event)">
+    <md-card-content>
+      <md-input-container class="full-width">
+        <input mdInput placeholder="Artist Name" [(ngModel)]="currentArtist.name" type="text" name="name">
+      </md-input-container>
+      <div class="select-wrapper">
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Description" [(ngModel)]="currentArtist.description" type="text" name="description">
+        </md-input-container>
+      </div>
+      <div class="select-wrapper">
+        <md-input-container class="full-width">
+          <input mdInput placeholder="Genre" [(ngModel)]="currentArtist.genre" type="text" name="genre">
+        </md-input-container>
+      </div>
+    </md-card-content>
+    <md-card-actions>
+      <button type="submit" md-button>Save</button>
+      <button type="button" md-button (click)="cancel()">Cancel</button>
+    </md-card-actions>
+  </form>
+</md-card>
+

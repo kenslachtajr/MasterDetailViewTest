@@ -1,0 +1,11 @@
+<div class="container">
+  <app-artist-list class="col-50"
+    [artists]="artists$ | async"
+    (select)="setCurrentArtist($event)"
+    (delete)="deleteArtist($event)">
+  </app-artist-list>
+  <app-artist-detail class="col-50"
+     [artist]="currentArtist$ | async"
+     (save)="saveArtist($event)">
+  </app-artist-detail>
+</div>

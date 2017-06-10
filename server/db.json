@@ -1,0 +1,46 @@
+{
+  "artists": [
+    {
+      "name": "Bill Evans",
+      "description": "Piano Wizard",
+      "genre": "Jazz Piano",
+      "id": 4
+    },
+    {
+      "name": "Snarky Buddy",
+      "description": "Going Places",
+      "genre": "Jazz Fusion",
+      "id": 5
+    },
+    {
+      "name": "Cory Henry",
+      "description": "Bad Organ ",
+      "genre": "New Stuff",
+      "id": 6
+    },
+    {
+      "name": "Brad Mehldau",
+      "description": "The Piano Man",
+      "genre": "Jazz Piano",
+      "id": 7
+    },
+    {
+      "name": "Oscar Peterson",
+      "description": "Mad Piano Hands",
+      "genre": "Jazz Piano",
+      "id": 8
+    },
+    {
+      "name": "Art Tatum",
+      "description": "Stride",
+      "genre": "Jazz",
+      "id": 9
+    },
+    {
+      "name": "Bud Powell",
+      "description": "Piano",
+      "genre": "Stride Piano",
+      "id": 10
+    }
+  ]
+}
